@@ -1,0 +1,1 @@
+This file is for github only. Running tests will create new files in this folder.
