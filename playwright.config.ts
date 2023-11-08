@@ -1,6 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const Base_URL = "https://rickandmortyapi.com/"
 
 export default defineConfig({
   testDir: './tests',
@@ -23,7 +22,6 @@ export default defineConfig({
       name: 'Tests_Chrome_With_Media',
       use: {
         launchOptions: { slowMo: 500 },
-        baseURL: Base_URL,
         actionTimeout: 0,
         browserName: 'chromium',
         headless: true,
@@ -38,7 +36,6 @@ export default defineConfig({
       name: 'Tests_Safari',
       use: {
         launchOptions: { slowMo: 500 },
-        baseURL: Base_URL,
         actionTimeout: 0,
         browserName: 'webkit',
         headless: true,
