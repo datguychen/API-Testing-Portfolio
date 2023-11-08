@@ -1,0 +1,44 @@
+The Rick and Morty API:  https://rickandmortyapi.com/
+
+
+
+Endpoint Validation:
+
+Verify that all expected endpoints are present and functioning correctly.
+Test for proper handling of non-existent endpoints (e.g., 404 response code).
+Parameter Validation:
+
+Test various combinations of valid and invalid parameters for each endpoint.
+Ensure that the API returns appropriate responses (e.g., error messages) for invalid parameter values.
+Authentication and Authorization:
+
+If the API requires authentication, test the login process and ensure that authenticated endpoints behave as expected.
+Verify that unauthorized users receive the correct response (e.g., 401 Unauthorized).
+Response Structure:
+
+Validate the structure of the response for each endpoint (e.g., JSON schema validation).
+Ensure that the response contains the expected fields and data types.
+Status Codes:
+
+Verify that the API returns the correct HTTP status codes for different scenarios (e.g., 200 OK, 404 Not Found, 500 Internal Server Error).
+Pagination:
+
+If applicable, test endpoints that support pagination. Ensure that the pagination parameters (e.g., page, limit) work as expected.
+Sorting and Filtering:
+
+Test endpoints that support sorting and filtering. Verify that the API returns results in the correct order and filters data appropriately.
+Error Handling:
+
+Test error scenarios (e.g., incorrect endpoint, missing parameters) and verify that the API provides meaningful error messages.
+Rate Limiting:
+
+If the API has rate limiting, ensure that it is enforced correctly and that the API returns the appropriate response when the limit is exceeded.
+Concurrency and Performance:
+
+Test the API under load to ensure it can handle concurrent requests without issues.
+Cross-Browser Compatibility:
+
+If applicable (though not directly related to API testing), you can demonstrate your knowledge of Playwright by automating browser-based tests that interact with the API.
+Documentation Review:
+
+Evaluate the clarity and completeness of the API documentation. This is important for any team working with the API.
