@@ -21,6 +21,16 @@ test('Check_Api_Status_200_OK_Display_Result', async ({request}) => { // <-- req
   await expect(responseBodyText.data.id).toBe(2);
 });
 
+test('Check_Api_Status_204_No_Content', async ({request}) => {
+  //DELETE information on the page
+  const response = await request.delete('https://reqres.in/api/users/2', {
+      data:{
+          id: "1000",
+      }
+  });
+  expect(response.status()).toBe(204);
+});
+
 test('Check_Api_Status_201_Created', async ({request}) => {
   const response = await request.post('https://reqres.in/api/user', {
       data: {
@@ -37,11 +47,16 @@ test('Check_Api_Status_201_Created', async ({request}) => {
 
 test('Check_Api_Status_400_Bad_Request', async ({request}) => {
   const response = await request.post('https://reqres.in/api/login', {
-      data: {
-          email: "peter@klaven",
-      },
+    data: {
+        email: "eve.holt2@reqres.in",
+        password: "cityslicka"
+    },
   });
+  const responseBody = JSON.parse(await response.text());
+  console.log(responseBody);
   expect(response.status()).toBe(400);
+  expect(responseBody.token).toBeFalsy();
+  expect(responseBody.error).toBe("user not found");
 });
 
 //401 TBD
@@ -63,5 +78,5 @@ test('Check_NonExistent_Page_Api_Status_404_Not_Found', async ({request}) => { /
 
 
 /*
-Status_Code.spec.ts
+Status_Codes.spec.ts
 */
