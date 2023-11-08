@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Repository for my advanced API testing using Playwright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "all": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
