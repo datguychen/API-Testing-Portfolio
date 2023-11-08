@@ -5,11 +5,11 @@ DONE Endpoint Validation:
 DONE Status Codes:
 - Verify that the API returns the correct HTTP status codes for different scenarios (e.g., 200 OK, 404 Not Found, 500 Internal Server Error).
 
-Parameter Validation:
+DONE Parameter Validation:
 - Test various combinations of valid and invalid parameters for each endpoint.
 - Ensure that the API returns appropriate responses (e.g., error messages) for invalid parameter values.
 
-Response Structure:
+DONE Response Structure:
 - Validate the structure of the response for each endpoint (e.g., JSON schema validation).
 - Ensure that the response contains the expected fields and data types.
 
