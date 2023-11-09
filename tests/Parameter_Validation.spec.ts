@@ -1,5 +1,3 @@
-//Here I use PokeAPI to test the endpoints
-
 import { test, expect } from '@playwright/test';
 import { writeFile, readFile, unlink } from 'fs/promises';
 import fs from 'fs';

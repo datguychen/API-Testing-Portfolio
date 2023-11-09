@@ -13,21 +13,12 @@ DONE Response Structure:
 - Validate the structure of the response for each endpoint (e.g., JSON schema validation).
 - Ensure that the response contains the expected fields and data types.
 
-Sorting and Filtering:
-- Test endpoints that support sorting and filtering. Verify that the API returns results in the correct order and filters data appropriately.
-
-Pagination:
-- If applicable, test endpoints that support pagination. Ensure that the pagination parameters (e.g., page, limit) work as expected.
-
-Authentication and Authorization:
+DONE Authentication and Authorization:
 - If the API requires authentication, test the login process and ensure that authenticated endpoints behave as expected.
 - Verify that unauthorized users receive the correct response (e.g., 401 Unauthorized).
 
-Error Handling:
+DONE Error Handling:
 - Test error scenarios (e.g., incorrect endpoint, missing parameters) and verify that the API provides meaningful error messages.
 
-Rate Limiting:
-- If the API has rate limiting, ensure that it is enforced correctly and that the API returns the appropriate response when the limit is exceeded.
-
-Concurrency and Performance:
+Performance (K6):
 - Test the API under load to ensure it can handle concurrent requests without issues.

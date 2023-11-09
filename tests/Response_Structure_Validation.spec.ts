@@ -1,5 +1,4 @@
-//Here I use PokeAPI to test the endpoints
-//Also I used Ajv library for response structure validation
+//I used Ajv library for response structure validation
 
 import { test, expect } from '@playwright/test';
 import Ajv from 'ajv';
